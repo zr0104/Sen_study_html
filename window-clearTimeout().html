@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>事件-clearTimeout()取消计时器</title>
+<script type="text/javascript">
+var num=0;
+var i;
+function startCount(){
+	document.getElementById('count').value=num;
+	num=num+1;
+	i=setTimeout("startCount()",1000)
+}
+function stopCount(){
+	clearTimeout(i);
+}
+</script>
+</head>
+<body>
+ <form action="">
+ 	<input type="text" id="count" />
+ 	<input type="button" value="start" onclick="startCount()" />
+ 	<input type="button" value="stop" onclick="stopCount()" />
+ </form>
+</body>
+</html>

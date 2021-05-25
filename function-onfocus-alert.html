@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>光标聚焦事件-onfocus</title>
+<script type="text/javascript">
+	//方法调用一
+	function message(){
+		alert("请选择您的职业！");
+	}
+</script>
+</head>
+<body>
+请选择您的职业：<br>
+ <form action="">
+ 	   <!-- <input name="username" type="text" value="请输入姓名！" onfocus="message()" > -->
+ 	<select name="career" name="text" onfocus="message()">
+ 		<option>学生</option>
+ 		<option>教师</option>
+ 		<option>工程师</option>
+ 		<option>演员</option>
+ 		<option>会计</option>
+ 	</select>
+ 	
+ </form>
+</body>
+</html>

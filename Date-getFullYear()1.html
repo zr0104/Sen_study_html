@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Date - 设置年份方法</title>
+<script type="text/javascript">
+	var mydate=new Date();
+/* 	var b=new Date(2019, 10, 1);  //定义初始值2019年10月1日
+	var c=new Date('oct 1,2019');  //定义初始值2019年10月1日 */
+	
+	document.write(mydate+"<br>");  //输出当前时间
+	document.write(mydate.getFullYear()+"年"+"<br>");  //输出当前纯年份
+	
+	mydate.setFullYear(81);  //设置年份
+	document.write(mydate+"<br>");  //输出年份被设定为0081年
+	document.write(mydate.getFullYear()+"年"+"<br>");  //输出当前纯年份
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

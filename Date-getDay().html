@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Date - 设置年月日方法</title>
+<script type="text/javascript">
+/* 	var myDate = new Date();
+	var weekDays=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+	document.write(myDate.getFullYear()+"年" + myDate.getMonth()+"月" + myDate.getDay()+"日" +" ");  //输出当前纯年月日
+	document.write(weekDays[myDate.getDay()]);
+	 */
+	 var myStr="01234:11;01234:12;01234:13;01234:16";
+	 var myArr= myStr.split(";");
+	 document.write(myArr);
+	  //从数组中将成绩撮出来，然后求和取整，并输出。
+	  var sum=0;
+	  var avg=0;
+	  for(var i=0; i<myArr.length; i++){
+	      sum = sum + parseInt(myArr[i].substr(6,8));
+	  }
+	  avg = sum / myArr.length;
+	  document.write("--班级总分为:" + parseInt(avg));
+</script>
+</head>
+<body>
+
+</body>
+</html>

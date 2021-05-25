@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>事件-onmouseover</title>
+<script type="text/javascript">
+	//onmouseover调用方法一:_blank跳转到新页面；_self跳转到当前页面
+/* 	function openwin(){
+		window.open(href='http://test.portal.lvdatong.com','_blank','height=600,width=800,top=100,toolbar=yes,left=10,menubar=yes,scrollbars=yes,status=yes');
+	} */
+	
+	//onmousenover调用方法二
+	function openwin(){
+		confirm("请输入密码后，再单击确定！");
+	}
+</script>
+</head>
+<body>
+	密码：<input name="password" type="password">
+ 	<input type="submit" value="提交" onmouseover="openwin()" />
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Math - concat()数组的连接</title>
+<script type="text/javascript">
+    //方法一
+/* 	var myarr1 = new Array("010");
+	var myarr2 = new Array("-","89898787979");
+    document.write(myarr1.concat(myarr2)); */
+    
+    //方法二
+/*   var mya = new Array(3);
+  mya[0] = "1";
+  mya[1] = "2";
+  mya[2] = "3";
+  document.write(mya.concat(4,5)+"<br>"); //输出添加后的4和5，显示1，2，3，4，5
+  document.write(mya); //显示1，2，3 */
+  
+  //方法三
+  var mya1= new Array("hello!")
+  var mya2= new Array("I","love");
+  var mya3= new Array("JavaScript","!");
+  var mya4=mya1.concat(mya2,mya3);
+  document.write(mya4);  //运行结果：hello!,I,love,JavaScript,!
+</script>
+</head>
+<body>
+
+</body>
+</html>

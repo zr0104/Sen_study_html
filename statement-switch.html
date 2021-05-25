@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>流程控制语句-switch语句</title>
+<script type="text/javascript">
+function a(){
+	var myweek =35564;  //myweek表示星期几变量
+	switch(myweek){
+	case 1:
+	case 2:
+		document.write("上清华北大");
+		break;
+	case 3:
+	case 4:
+		document.write("上武汉上海交大");
+		break;
+	case 5:
+		document.write("上浙江大学");
+		break;
+	case 6:
+	case 7:
+		document.write("上中山大学");
+		break;
+	default:
+		alert("上哈佛大学");
+	}
+}
+</script>
+</head>
+<body>
+	<input type="submit" value="提交" onclick="a()" />
+</body>
+</html>

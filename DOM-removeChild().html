@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>DOM-appendChild()-增加新节点</title>
+</head>
+<body>
+  <ul id="test">   
+	<li>javascript</li>   
+    <li>jquery</li>   
+    <li>html</li>   
+  </ul>   
+<script type="text/javascript">
+function clearText(){
+	  var otest = document.getElementById("test");
+	  for(var i=otest.childNodes.length-1;i>=0;i--){
+		  var childNode = otest.childNodes[i];
+		  otest.removeChild(childNode);
+	  }
+	  //法二,一次性清除节点内容
+	  /*   
+	     for(var i=content.childNodes.length-1;i>=0;i--){
+	        var chnode=content.childNodes[i];
+	        content.removeChild(chnode);  
+	     }
+	  */ 
+
+	    //法三,多次方清除节点内容
+	  /*
+	     for(var i=0;i<content.childNodes.length;i++){
+	      var chnode=content.childNodes[i];
+	      content.removeChild(chnode);  
+	    }
+	  */
+}
+</script>
+<button onclick="clearText()">点击清除节点</button>
+</body>
+</html>

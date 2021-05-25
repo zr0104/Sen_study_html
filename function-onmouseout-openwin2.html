@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>事件-onmouseout</title>
+<script type="text/javascript">
+	//onmouseout调用方法一:target属性
+
+/* _blank    在新窗口中打开。    
+
+_self    默认。在相同的框架中打开。    
+_parent    在父框架集中打开。    
+_top    在整个窗口中打开。     */
+
+/* 	function openwin(){
+		window.open(href='http://test.portal.lvdatong.com','_blank','height=600,width=800,top=100,toolbar=yes,left=10,menubar=yes,scrollbars=yes,status=yes');
+	} */
+	
+	//onmousenout调用方法二
+/* 	function openwin(){
+		confirm("请输入密码后，再单击确定！");
+	} */
+	
+	//onmouseout调用方法三
+	function message(){
+		alert("不要移开，点击后进入bilibili网站！");
+	}
+</script>
+</head>
+<body>
+  <a href="http://bilibili.com" onmouseout="message()">点击我</a>
+
+<!--方法一和二 	密码：<input name="password" type="password">
+ 	<input type="submit" value="提交" onmouseover="openwin()" /> -->
+</body>
+</html>

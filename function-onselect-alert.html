@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>内容选中事件-onselect</title>
+<script type="text/javascript">
+	//方法调用一
+	function message(){
+		alert("您触发了选中文案事件！");
+	}
+/* 	function message1(){
+		alert("请输入用户密码后，在输入密码！");
+	}
+	function message2(){
+		alert("请确认密码输入正确！");
+	} //废弃调用  */
+</script>
+</head>
+<body>
+请选择您的职业：<br>
+ <form action="">
+ 		<textarea name="summary" rows="5" cols="60" onselect="message()">请输入个人简介，不少于200字！</textarea>
+<!--  	<select name="career" name="text" onblur="message()">
+ 		<option>学生</option>
+ 		<option>教师</option>
+ 		<option>工程师</option>
+ 		<option>演员</option>
+ 		<option>会计</option>
+ 	</select>
+ 	<br><br>
+ 	用户:<input name="username" type="text" value="请输入用户姓名！" onblur="message1()" > 
+ 	<br>
+ 	密码:<input name="password" type="text" value="请输入密码！" onblur="message2()" > -->
+ </form>
+</body>
+</html>
